@@ -71,8 +71,16 @@ Why is this important? The icon size and color depth in an EXE file are fixed, a
 
 When Windows displays a main application icon, such as for a desktop shortcut, it selects an icon based on specific criteria rather than the first one it finds. Carelessly swapping out icons of different sizes or color depths can result in visual artifacts.
 
+# Icon Extractor:
+Generally, the icons of all files can be extracted, even those whose resource area is heavily modified and full of files. It's not always just image files that are present, but rather a wider range of other files in the resource area. For example, the resource area of ​​Photoshop.exe contains 116 files.
 
+</br>
 
+![Icon Extractor](https://github.com/user-attachments/assets/030b5145-d427-4a11-8154-0155688f80ef)
+
+</br>
+
+The extractor can be used to extract all this information and find the icon.
 
 
 
