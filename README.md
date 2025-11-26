@@ -106,7 +106,7 @@ Cache writes must eventually be propagated to the backing store. The timing for 
 * Write-through: Writes are performed synchronously to both the cache and the backing store.
 * Write-back: Initially, writing is done only to the cache. The write to the backing store is postponed until the modified content is about to be replaced by another cache block.
 
-* </br>
+</br>
 
 ![Write-through_with_no-write-allocation svg](https://github.com/user-attachments/assets/11501f0c-db73-4b73-9f67-6c704b6eacd5)
 
