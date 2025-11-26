@@ -49,7 +49,7 @@ An ICO or CUR file is made up of an ICONDIR ("Icon directory") structure, contai
 </br>
 
 | Offset (bytes) | Field | Size (bytes) | Description |
-| :-----------: | :-----------: | :-----------: | :-----------: |
+| :-----------: | :-----------: | :-----------: | :----------- |
 | 0     | idReserved     | 2     | Reserved. Must be 0.     |
 | 2     | idType     | 2     | Image type: 1 for ICO image, 2 for CUR image. Other values are invalid.     |
 | 4     | idCount     | 2     | Number of images in the file.     |
