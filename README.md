@@ -13,6 +13,16 @@
 
 The ICO file format is an [image file format](https://en.wikipedia.org/wiki/Image_file_format) for [computer icons](https://en.wikipedia.org/wiki/Icon_(computing)) in Microsoft Windows. ICO files contain one or more small images at multiple sizes and [color depths](https://en.wikipedia.org/wiki/Color_depth), such that they may be [scaled](https://en.wikipedia.org/wiki/Image_scaling) appropriately. In Windows, all [executables](https://en.wikipedia.org/wiki/Executable) that display an icon to the user, on the desktop, in the Start Menu, or in file Explorer, must carry the icon in ICO format.
 
+Icons introduced in [Windows 1.0](https://en.wikipedia.org/wiki/Windows_1.0) were 32×32 pixels in size and were monochrome. Support for 16 colors was introduced in Windows 3.0.[citation needed]
+
+Win32 introduced support for storing icon images of up to [16.7 million colors](https://en.wikipedia.org/wiki/Color_depth#True_color_(24-bit)) (TrueColor) and up to 256×256 pixels in dimensions. Windows 95 also introduced a new Device Independent Bitmap (DIB) engine. However, 256 color was the default icon color depth in Windows 95. It was possible to enable [65535 color (Highcolor)](https://en.wikipedia.org/wiki/RGB_color_model#16-bit_RGB_(Highcolor)) icons by either modifying the Shell Icon BPP value in the registry or by purchasing Microsoft Plus! for Windows 95. The Shell Icon Size value allows using larger icons in place of 32×32 icons and the Shell Small Icon Size value allows using custom sizes in place of 16×16 icons. Thus, a single icon file could store images of any size from 1×1 pixel up to 256×256 pixels (including non-square sizes) with 2 (rarely used), 16, 256, 65535, or 16.7 million colors; but the shell could not display very large sized icons. The notification area of the Windows taskbar was limited to 16 color icons by default until Windows Me when it was updated to support high color icons.
+
+
+
+
+
+
+
 
 
 
