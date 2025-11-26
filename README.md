@@ -57,9 +57,19 @@ An ICO or CUR file is made up of an ICONDIR ("Icon directory") structure, contai
 | 4     | idCount     | 2     | Number of images in the file.     |
 | 6     | idEntries     | idCount * 16     | ICONDIRENTRY array. Each entry represents an image.     |
 
+</br>
 
+When changing icons, ensure the replacement icons are the same size and have the same number of colors as the original (e.g., a 16x16 4-bit icon cannot be replaced with a 32x32 8-bit icon). If you encounter a mismatch error when attempting to replace an icon that appears to be the same size and bit depth, the source icon likely has a different color depth (24-bit and 32-bit icons can look very similar).
 
+Why is this important? The icon size and color depth in an EXE file are fixed, and there are typically multiple icons within a Windows executable. Here's an example of an Icon Group found in the Notepad application:
 
+</br>
+
+![notepadicons24](https://github.com/user-attachments/assets/59cbebb2-6c6f-408f-926e-189c43aac0b9)
+
+</br>
+
+When Windows displays a main application icon, such as for a desktop shortcut, it selects an icon based on specific criteria rather than the first one it finds. Carelessly swapping out icons of different sizes or color depths can result in visual artifacts.
 
 
 
