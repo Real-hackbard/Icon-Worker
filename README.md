@@ -120,3 +120,5 @@ Write operations do not return data. Consequently, a decision needs to be made f
 I don't want to dwell on this topic any longer, as there are many discussions online about why antivirus manufacturers do things this way. I can even create a file with no content that every antivirus program will classify as dangerous and trigger an alert.
 
 This probably has to do with our corporate structure, which aims to mislead users as much as possible. Therefore, it can happen that if an icon in an EXE file is changed, your antivirus program will subsequently classify it as dangerous, even though nothing more has been done than to alter the file's graphic.
+
+Everyone has to decide for themselves how to deal with this issue, because a file that is recognized as harmless and whose graphics area has been modified cannot then be declared dangerous, which happens again and again! (?).
