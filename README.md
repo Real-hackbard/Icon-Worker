@@ -98,11 +98,21 @@ https://renenyffenegger.ch/development/Windows/PowerShell/examples/WinAPI/Extrac
 
 Icon Worker can extract these symbols and import the executables.
 
+# Cache:
+If the icon of an executable file has been changed, it is usually not immediately visible, and the old icon is still displayed. This is because the [Windows cache](https://en.wikipedia.org/wiki/Cache_(computing)) still contains the old information about this file and has not been updated. Only when the file is renamed or moved, or the system is restarted, is the cache information renewed.
 
+Cache writes must eventually be propagated to the backing store. The timing for this is governed by the write policy. The two primary write policies are:
 
+* Write-through: Writes are performed synchronously to both the cache and the backing store.
+* Write-back: Initially, writing is done only to the cache. The write to the backing store is postponed until the modified content is about to be replaced by another cache block.
 
+* </br>
 
+![Write-through_with_no-write-allocation svg](https://github.com/user-attachments/assets/11501f0c-db73-4b73-9f67-6c704b6eacd5)
 
+</br>
+
+A write-back cache is more complex to implement since it needs to track which of its locations have been written over and mark them as dirty for later writing to the backing store. The data in these locations are written back to the backing store only when they are evicted from the cache, a process referred to as a lazy write. For this reason, a read miss in a write-back cache may require two memory accesses to the backing store: one to write back the dirty data, and one to retrieve the requested data. Other policies may also trigger data write-back. The client may make many changes to data in the cache, and then explicitly notify the cache to write back the data.
 
 
 
