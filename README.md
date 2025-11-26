@@ -11,7 +11,7 @@
 
 </br>
 
-
+The ICO file format is an [image file format](https://en.wikipedia.org/wiki/Image_file_format) for [computer icons](https://en.wikipedia.org/wiki/Icon_(computing)) in Microsoft Windows. ICO files contain one or more small images at multiple sizes and [color depths](https://en.wikipedia.org/wiki/Color_depth), such that they may be [scaled](https://en.wikipedia.org/wiki/Image_scaling) appropriately. In Windows, all [executables](https://en.wikipedia.org/wiki/Executable) that display an icon to the user, on the desktop, in the Start Menu, or in file Explorer, must carry the icon in ICO format.
 
 
 
