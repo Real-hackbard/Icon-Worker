@@ -23,6 +23,8 @@ Win32 introduced support for storing icon images of up to [16.7 million colors](
 
 </br>
 
+Of course, it's not possible to modify the resources of all files because they have been processed differently. Some executables are heavily compressed or protected with special security programs that deny access to the resources, or attempting to access them would corrupt the file.
+
 In simple terms, a Windows application's resources are separate from its program code. This distinction allows you to make significant changes to the interface without recompiling the entire application.
 
 A resource is any non-executable data that is logically deployed with an application. A resource might be displayed in an application as error messages or as part of the user interface. Resources can contain data in a number of forms, including a collection of icons, strings, images, and data objects. Examples of resources include:
