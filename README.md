@@ -82,7 +82,8 @@ Generally, the icons of all files can be extracted, even those whose resource ar
 
 The extractor can be used to extract all this information and find the icon.
 
-
+# Windows Shell Icons:
+shell32.dll is a Windows system file that functions as a dynamic link library (DLL). It contains functions for the Windows shell, including the desktop, the Start menu, the taskbar, and the ability to open files and web links. This DLL is an essential part of the operating system and cannot be easily removed.
 
 
 
