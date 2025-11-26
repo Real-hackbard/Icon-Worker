@@ -89,7 +89,7 @@ This is also where the Windows icons, such as those displayed in Explorer, are l
 
 </br>
 
-[shell.bmp](https://github.com/user-attachments/files/23762953/shell.bmp)
+![shell](https://github.com/user-attachments/assets/a6bfd28a-f46d-4ff3-9e60-0104904a6750)
 
 </br>
 
