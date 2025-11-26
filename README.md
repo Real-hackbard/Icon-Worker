@@ -114,5 +114,5 @@ Cache writes must eventually be propagated to the backing store. The timing for 
 
 A write-back cache is more complex to implement since it needs to track which of its locations have been written over and mark them as dirty for later writing to the backing store. The data in these locations are written back to the backing store only when they are evicted from the cache, a process referred to as a lazy write. For this reason, a read miss in a write-back cache may require two memory accesses to the backing store: one to write back the dirty data, and one to retrieve the requested data. Other policies may also trigger data write-back. The client may make many changes to data in the cache, and then explicitly notify the cache to write back the data.
 
-
+Write operations do not return data. Consequently, a decision needs to be made for write misses: whether or not to load the data into the cache.
 
