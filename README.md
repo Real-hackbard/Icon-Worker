@@ -87,5 +87,22 @@ shell32.dll is a Windows system file that functions as a dynamic link library (D
 
 This is also where the Windows icons, such as those displayed in Explorer, are located. When the icon view of a folder is to be changed, these exact icons are loaded from shell32.dll.
 
+</br>
+
+[shell.bmp](https://github.com/user-attachments/files/23762953/shell.bmp)
+
+</br>
+
+Here is a list of all icons in Windows 10. :
+https://renenyffenegger.ch/development/Windows/PowerShell/examples/WinAPI/ExtractIconEx/shell32.html
+
+Icon Worker can extract these symbols and import the executables.
+
+
+
+
+
+
+
 
 
